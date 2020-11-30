@@ -36,17 +36,7 @@ for jj= 1:volte
     ris(jj)= x_0;
     x_0 = L(x_0);
 end
-% topl = []; %taglia i valori che mi interessano
-% rtopl = [];
-% for jj = 1:volte
-%     if ris(jj)>0.86
-%        topl = [ topl, ris(jj)];
-%        rtopl =[ rtopl, r_coord(jj)];
-%     end
-% end
-% rtopl = rtopl';
-% topl = topl';
-%p = plot(rtopl, topl);
+
 p = plot( r_coord, ris ) ;
 set ( p ,'color', 'r');
 set ( p, 'marker', '.');
